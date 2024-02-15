@@ -42,6 +42,11 @@ app.use("/api/v1",userRoute);
 const forumRoute=require("./routes/forum.route");
 app.use("/api/v1",forumRoute);
 
+//subject course
+const subjectCourseRoute=require("./routes/subjectCourse.route");
+app.use("/api/v1",subjectCourseRoute);
+
+
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/views/index.html");
 });
